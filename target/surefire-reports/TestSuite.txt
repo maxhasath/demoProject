@@ -1,15 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 18.921 s <<< FAILURE! - in TestSuite
-loginTest(tests.LoginTest)  Time elapsed: 1.018 s  <<< FAILURE!
-org.openqa.selenium.UnhandledAlertException: 
-Dismissed user prompt dialog: User or Password is not valid: 
-Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
-System info: host: 'KESHAWA-PC', ip: '192.168.1.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 14248, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5a26af02-4769-4729-8803-c22e92656f04
-*** Element info: {Using=xpath, value=//table//tr//[@class='heading']}
-	at tests.LoginTest.loginTest(LoginTest.java:42)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.953 s - in TestSuite

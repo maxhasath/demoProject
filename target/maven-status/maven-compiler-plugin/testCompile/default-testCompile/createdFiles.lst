@@ -1,1 +1,5 @@
+conditions\BaseCondition.class
+conditions\AuthCondition.class
+tests\AddNewCustomerTest.class
 tests\LoginTest.class
+util\BaseTest.class

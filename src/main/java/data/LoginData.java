@@ -1,24 +1,13 @@
 package data;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class LoginData {
 
-    public String getTitle() {
-        return title;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    private String title;
-    private String userName;
-    private String password;
-
-
-
-
+  private String title;
+  private String userName;
+  private String password;
 }

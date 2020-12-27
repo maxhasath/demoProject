@@ -1,47 +1,41 @@
 package pages;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 
-public class LoginPage {
+public class LoginPage extends Page {
 
-    WebDriver driver;
+  By txtUserName = By.xpath("//input[@name='uid']");
+  By txtPassword = By.xpath("//input[@name='password']");
+  By lblTitleText = By.className("barone");
+  By btnLogin = By.name("btnLogin");
 
-    public LoginPage(WebDriver driver){
-        this.driver=driver;
+  public LoginPage(WebDriver driver) {
+    super(driver);
+  }
 
-    }
+  public void setUserName(String userName) {
+    this.sendKeys(txtUserName, userName);
+  }
 
-    By txtUserName = By.xpath("//input[@name='uid']");
-    By txtPassword = By.xpath("//input[@name='password']");
-    By lblTitleText = By.className("barone");
-    By btnLogin = By.name("btnLogin");
+  public void setPassword(String password) {
+    this.sendKeys(txtPassword, password);
+  }
 
-    public void setUserName(String userName){
-        driver.findElement(txtUserName).sendKeys(userName);
-    }
+  public void clickLogin() {
+    this.click(btnLogin);
+  }
 
-    public void setPassword(String password){
-        driver.findElement(txtPassword).sendKeys(password);
-    }
+  public String getLoginTitle() {
+    return this.getText(lblTitleText);
+  }
 
-    public void clicklogin(){
-        driver.findElement(btnLogin).click();
-    }
-
-
-    public String getLoginTitle(){
-        return driver.findElement(lblTitleText).getText();
-    }
-
-    public void login(String userName, String passWord){
-        this.setUserName(userName);
-        this.setPassword(passWord);
-        this.clicklogin();
-
-    }
-
-
+  public void login(String userName, String passWord) {
+    this.setUserName(userName);
+    this.setPassword(passWord);
+    this.clickLogin();
+  }
 }
 
 
